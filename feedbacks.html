@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+       
+        body{
+          background-image: linear-gradient(rgba(25, 89, 96, 0.9),rgba(247, 253, 246, 0.86)),url(despicable\ me.jpeg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+    }
+
+
+    
+  ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+.logo img{
+    height: 40px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 20px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+}
+    .search{
+        width:250px;
+        height: 40px;
+        background-color: rgba(245,245,245,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 0px 20px;
+    }
+    .search input{
+        width:100%;
+        height: 30px;
+        border:none;
+        outline: none;
+        background-color: transparent;
+    }
+    .search i{
+        color:#3a3a3a;
+    }
+    nav .menu li a:hover{
+        background-color: #242424;
+        color:#ffffff;
+        box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+        transition: all ease 0.2s;
+    }
+  
+
+
+
+
+
+
+
+  h1 {
+ 
+  font-size: 32px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+        
+        form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: darkslategrey;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.main{
+  
+}
+/*reviews css*/
+
+.amazing-reviews {
+  font-size: 12pt;
+}
+.amazing-reviews{
+  font-family: Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  padding: 0;
+  margin: 30px 0 0 0;
+  padding: 15px 15px 10px 15px;
+  position: relative;
+  box-shadow: rgba(0,0,0,.025) 0 3px 20px;
+  
+}
+blockquote{
+  font-family: Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+  padding: 0;
+  height: 90px;
+  background-color: #ffffff;
+  margin: 20px ;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.amazing-reviews blockquote:nth-of-type(even):before {
+  left: auto;
+  right: 20px;
+}
+
+.amazing-reviews blockquote span em {
+  font-style: normal;
+  font-weight: bold;
+  color: #155096;
+  text-decoration: underline;
+}
+.amazing-reviews blockquote span:last-of-type {
+  color: #e47d21;
+  font-size: 10pt;
+  font-weight: bold;
+  display: block;
+}
+.amazing-reviews blockquote p {
+  font-size: 12pt;
+  font-style: normal;
+  margin: 5px 0 0 0;
+  color: black;
+}
+.amazing-reviews h2:last-of-type {
+  background: #eee;
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.amazing-reviews h2 q,
+.amazing-reviews h2 strong {
+  font-weight: 600;
+}
+@media (min-width: 400px) {
+  .amazing-reviews h2:last-of-type {
+    font-size: 24pt;
+  }
+}
+@media (min-width: 700px) {
+  .amazing-reviews blockquote {
+    width: 75%;
+    margin: 30px 15px 0 15px;
+  }
+  .amazing-reviews blockquote:nth-of-type(even) {
+    margin-left: calc(25% - 15px);
+  }
+  .amazing-reviews h2:last-of-type {
+    font-size: 28pt;
+  }
+}
+@media (min-width: 700px) {
+  .amazing-reviews .quote-container {
+    width: 100%;
+    padding: 0 75px;
+  }
+}
+    </style>
+</head>
+<header>
+  <div class="logo">
+  <img src="logo-removebg-preview.png" class="hello">
+  </div>
+</header>
+<body>
+
+  <nav>
+    <a href="#"class="logo">
+        <img src="logo-removebg-preview.png" class="hello">
+    </a>
+<ul class="menu">
+  <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
+  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
+  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
+  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
+  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
+  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+ </ul> 
+ <div class="search">
+    <input type="text" placeholder="find your favourite movies"/>
+    <i class="fas fa-search"></i>
+ </div>
+</nav>
+<div class="main">
+ <h1>leave your feedback below</h1>
+ </div>
+<div class="forms">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>
+  
+   
+
+
+  <h1>Customers Reviews</h1>
+<h2>Movies/series/gaming</h2>
+<div class=amazing-reviews>
+  <blockquote>
+    <header>
+      
+      <strong>Black Adam</strong>
+      <span>, June 2</span>
+      <span>By <em>Wolfman</em></span>
+    </header>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+  </blockquote>
+  <blockquote>
+    <header>
+      
+      <strong>Deadpool</strong>
+      <span>, May 17</span>
+      <span>By <em>Theo K</em></span>
+      <span>Verified Purchase</span>
+    </header>
+    <p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+  </blockquote>
+  <blockquote>
+    <header>
+      
+      <strong>Call of duty</strong>
+      <span>, May 8</span>
+      <span>By <em>Jeff Thomas</em> (Bent River, AB)</span>
+      <span>Verified Purchase</span>
+    </header>
+    <p>Sint occaecat cupidatat NON proident, sunt in culpa qui officia deserunt mollit!</p>
+  </blockquote>
+  <blockquote>
+    <header>
+      
+      <strong>Wdnesday</strong>
+      <span>, April 28</span>
+      <span>By <em>Linda</em></span>
+      <span></span>
+    </header>
+    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </blockquote>
+  <blockquote>
+    <header>
+      
+      <strong>Gravity Fall</strong>
+      <span>, April 3</span>
+      <span>By <em>Michael "Mikko"</em> (California, USA)</span>
+      <span>Verified Purchase</span>
+    </header>
+  </blockquote>
+  <blockquote>
+    <header>
+      <strong>Arrow</strong>
+      <span>, February 16</span>
+      <span>By <em>Paul</em> (Perth, Ontario)</span>
+      <span>Verified Purchase</span>
+    </header>
+    <p>Pretosund us velit esse cillum dolore eu fugiat nulla pariatur noparatur sint coleomusa.</p>
+  </blockquote>
+  <blockquote>
+    <header>
+      <strong>insideout:)</strong>
+      <span>, January 30</span>
+      <span>By <em>FastestCowboy</em></span>
+      <span>Verified Purchase</span>
+    </header>
+  </blockquote>
+</div>
+    
+
+
+</body>
+</html>

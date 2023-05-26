@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+  body{
+    background-color: #ffffff;
+    
+  }
+ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+.logo img{
+    height: 40px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 20px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+}
+    .search{
+        width:250px;
+        height: 40px;
+        background-color: rgba(245,245,245,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 0px 20px;
+    }
+    .search input{
+        width:100%;
+        height: 30px;
+        border:none;
+        outline: none;
+        background-color: transparent;
+    }
+    .search i{
+        color:#3a3a3a;
+    }
+    nav .menu li a:hover{
+        background-color: #242424;
+        color:#ffffff;
+        box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+        transition: all ease 0.2s;
+    }
+
+
+  #slider{
+    margin-top: 30px;
+    overflow:hidden ;
+    height: 500px;
+   
+    
+  }
+  #slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+   
+
+  }
+  #slider figure img{
+ float: right;
+ width: 20%;
+  }
+  @keyframes slider{
+    0%{
+      left: 0;
+    }
+    20%{
+      left: 0;
+    }
+    25%{
+     left: -100%; 
+    }
+    45%{left: -100%; }
+    50%{left: -200%; }
+    70%{left: -200%; }
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+  }
+  
+
+
+
+
+.contain{
+  max-width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 10px;
+}
+
+.contain .game .game-cover {
+  transition: transform 0.1s ease;
+}
+
+.contain .game .game-cover:hover {
+  transform: translate(5px, -5px);
+  cursor: pointer;
+}
+ .contain .game .game-cover img {
+  height: 400px;
+  width: 100%;
+}
+
+.contain .game .game-cover:hover img {
+  box-shadow: -5px 5px #a970ff;
+}
+
+.section{
+             
+                margin-bottom: 20px; /* add space below main content */
+                width: 100%;
+              
+            }
+
+
+.app  a img{
+  width: 15%;
+  float: right;
+}
+.title{
+  color: black;
+
+}
+.clm  {
+			width: 15%;
+            float: left;
+			padding: 5px;
+			margin-right: 15px;
+			
+			margin-bottom: 5px;
+      
+	  }
+	  
+	  
+    	.clm img{
+			height: 300px;
+		}
+    .clm a{
+      color: black;
+    }
+
+ </style>
+ 
+</head>
+<header>
+  <div class="logo">
+  <img src="logo-removebg-preview.png" class="hello">
+  </div>
+</header>
+
+<body>
+    
+
+
+  <nav>
+    <a href="#"class="logo">
+        <img src="logo-removebg-preview.png" class="hello">
+    </a>
+<ul class="menu">
+  <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
+  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
+  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
+  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
+  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
+  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+ </ul> 
+ <div class="search">
+    <input type="text" placeholder="find your favourite games and apps"/>
+    <i class="fas fa-search"></i>
+ </div>
+</nav>
+
+
+    <div id="slider">          
+        <figure> 
+        <img src="fortnite_xiv_cool_skins_4k_hd_fortnite.jpg" alt="">      
+        <img src="cod back.jpg" alt="">
+        <img src="pacman.jpg" alt="">
+        <img src="Games-64.jpg" alt="">
+        <img src="thumb-1920-1131552.jpg" alt="">
+        <img src="fortnite_xiv_cool_skins_4k_hd_fortnite.jpg" alt=""> 
+    </div>
+
+
+
+ 
+</div>
+ 
+
+
+           
+  <div class="games">
+    <h1>Popular <span class="title-highlight">Games</span></h1>
+    <div class="contain">
+      <div class="game">
+        <div class="game-cover">
+          <img src="cod1.jpg" alt="Animal Crossing" />
+        </div>
+        <div class="game-info">
+          <p class="game-title">call of duty</p>
+         </div>
+    </div>
+      <div class="game">
+        <div class="game-cover">
+          <img src="legoo.jpeg" alt="League of Legends" />
+        </div>
+        <div class="game-info">
+          <p class="game-title">Lego</p>
+         </div>
+      
+      </div>
+      <div class="game">
+        <div class="game-cover">
+          <img src="jtu.jpg" alt="World of Warcraft" />
+        </div>
+        <div class="game-info">
+          <p class="game-title">STARWARS</p>
+        </div>
+        
+      </div>
+      <div class="game">
+        <div class="game-cover">
+          <img src="pubbg.jpg" alt="Overwatch" />
+        </div>
+        <div class="game-info">
+          <p class="game-title">PUBG</p>
+         
+        </div>
+         </div>
+      <div class="game">
+        <div class="game-cover">
+          <img src="FOR.jpg" alt="Mario Kart 8" />
+        </div>
+        <div class="game-info">
+          <p class="game-title">Fortnite</p>
+          
+        </div>
+        
+      </div>
+      
+        
+      </div>
+    </div>
+  </div>
+
+<div class="section">
+ <h1> APPS </h1>
+
+    <div class="clm">
+      <img src="dc.jpg" alt=""style="width: 100%">
+      <a href="">DC infinite universe</a>
+     </div>
+     <div class="clm">
+      <img src="cn.jpg" alt=""style="width: 100%">
+      <a href="">Cartoon Network</a>
+     </div>
+     <div class="clm">
+      <img src="tmz..jpg" alt=""style="width: 100%">
+      <a href="">TMZ</a>
+     </div>
+    </div>
+  
+</body>
+</html>

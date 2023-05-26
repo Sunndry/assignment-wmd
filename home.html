@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lightslider.css">
+    <!--js-link-->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <nav>
+        <a href="#"class="logo">
+            <img src="logo-removebg-preview.png" class="hello">
+        </a>
+   <ul class="menu">
+      <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
+      <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
+      <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
+      <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
+      <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
+      <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+     </ul> 
+     <div class="search">
+        <input type="text" placeholder="find your favourite movies"/>
+        <i class="fas fa-search"></i>
+     </div>
+    </nav>
+    
+    <section id="main">
+        <!--showcase----------------------->
+        <!--heading------------->
+        <h1 class="showcase-heading">Showcase</h1>
+        
+        <ul id="autoWidth" class="cs-hidden">
+        
+        <!--box-1--------------------------->
+        <li class="item-a">
+            <!--showcase-box------------------->
+           <div class="showcase-box">
+               <img src="despicable me.jpeg"/>
+           </div>
+               </li>
+            <!--box-2--------------------------->
+            <li class="item-b">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="deadpool.jpg"/>
+               </div>
+                   </li>
+                <!--box-3--------------------------->
+            <li class="item-c">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="Black_Panther.webp"/>
+               </div>
+                   </li>
+                <!--box-4--------------------------->
+            <li class="item-d">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="aqua.jpg"/>
+               </div>
+                   </li>
+                   <!--box-5--------------------------->
+            <li class="item-e">
+                <!--showcase-box------------------->
+               <div class="showcase-box">
+                   <img src="aqua.jpg"/>
+               </div>
+                   </li>
+          </ul>
+        
+    </section>
+        
+    
+
+     
+   
+    
+    <!--movies---------------------------->
+    <div class="movies-heading">
+        <h2>Most watched</h2>
+    </div>
+    <section id="movies-list">
+        <!--box-1------------------------>
+        <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+            <img src="monsterhouse.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Monster House (2009) Full Movie[In English] With English Subtitles | Animation
+            </a>
+        </div>
+         <!--box-2------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <img src="Interceptor.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Interceptor (2018) Full Movie[In English] With English Subtitles | Action
+            </a>
+        </div>
+         <!--box-3------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <img src="it.webp">
+            </div>
+            <!--text--------->
+            <a href="#">
+                IT(2018) Full Movie[In English] With English Subtitles |Horror
+            </a>
+        </div>
+         <!--box-4------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                <img src="bat.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Batman(2018) Full Movie[In English] With English Subtitles | Superhero
+            </a>
+        </div>
+         <!--box-5------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               
+                <img src="bean.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+               Mr bean:the movie (2018) Full Movie[In English] With English Subtitles |Comedy
+            </a>
+        </div>
+         <!--box-6------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+                
+                <img src="Black_Panther.webp">
+            </div>
+            <!--text--------->
+            <a href="#">
+               Avatar (2018) Full Movie[In English] With English Subtitles | Fiction
+            </a>
+        </div>
+         <!--box-7------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               <img src="Black_Panther.webp">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Black Panther2(2023) Full Movie[In English] With English Subtitles |Sci-Fi,Adventure
+            </a>
+        </div>
+         <!--box-8------------------------>
+         <div class="movies-box">
+            <!--img------------>
+            <div class="movies-img">
+               <img src="aqua.jpg">
+            </div>
+            <!--text--------->
+            <a href="#">
+                Aquaman and the lost kingdom(2023) Full Movie[In English] With English Subtitles | Adventure,Action
+            </a>
+        </div>
+    </section>
+
+     <!--slider-script-->
+     <script>
+        $(document).ready(function() {
+   $('#autoWidth').lightSlider({
+       autoWidth:true,
+       loop:true,
+       onSliderLoad: function() {
+           $('#autoWidth').removeClass('cS-hidden');
+       } 
+   });  
+ });
+   </script>
+
+    <!--footer------------------>
+    <footer>
+        <p>Warner Bro (upgrade) @Sandy 2023</p>
+        <p>Copyright 2020 - Warner Bros</p>
+    </footer>
+
+</body>
+</html>
