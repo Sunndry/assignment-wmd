@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     
+     ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+  }
+.logo img{
+    height: 40px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a {
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 20px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+}
+    .search{
+        width:250px;
+        height: 40px;
+        background-color: rgba(245,245,245,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 0px 20px;
+    }
+    .search input{
+        width:100%;
+        height: 30px;
+        border:none;
+        outline: none;
+        background-color: transparent;
+    }
+    .search i{
+        color:#3a3a3a;
+    }
+    nav .menu li a:hover{
+        background-color: #242424;
+        color:#ffffff;
+        box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+        transition: all ease 0.2s;
+    }
+
+    .text-box{
+   position: absolute;
+   margin-left: 120px;
+   margin-top: 280px;
+   top: 0;
+   bottom: 0;
+   height:50% ;
+   width: 100%;
+   color: rgb(255, 255, 255);
+   align-items: center;
+   display: flex;
+   font-size: 60px;
+   font-weight: 900;
+   
+ }
+
+.back-video{
+  position: centre;
+  width: 70% ;
+  
+  margin-left: 120px;
+}/*
+margin-left: 60px;
+  width:90% ;*/
+
+.content{
+  background: #ffffff;
+  height: 500px;
+  margin-top: 30px;
+}
+  
+ .clm  {
+			width: 15%;
+            float: left;
+			padding: 5px;
+			margin-right: 15px;
+		  margin-top: 10px;
+			margin-bottom: 5px;
+	  }
+	  
+	  
+    	.clm img{
+			height: 300px;
+		}
+
+@media(min-aspect-ratio: 16/9){
+  .back-video{
+     width: 80%;
+     height: auto;
+  }
+}
+@media(max-aspect-ratio: 16/9){
+  .back-video{
+    width: auto;
+    height: 80%;
+  }
+}
+
+
+    </style>
+</head>
+<header>
+    <div class="logo">
+    <img src="logo-removebg-preview.png" class="hello">
+    </div>
+  </header>
+<body>
+  <video autoplay loop muted plays-inline class="back-video" >
+    <source src="Warner Bros. Pictures Logo Intro (2021_ with Official New Fanfare)(360P).mp4" type="video/mp4">
+
+  </video>
+  <div class="text-box">
+    <h1>COLLECTIONS</h1>
+</div>
+  <nav>
+    <a href="#"class="logo">
+        <img src="logo-removebg-preview.png" class="hello">
+    </a>
+<ul class="menu">
+  <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
+  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
+  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
+  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
+  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
+  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+ </ul> 
+ <div class="search">
+    <input type="text" placeholder="find your favourite movies"/>
+    <i class="fas fa-search"></i>
+ </div>
+</nav>
+
+<div class="content">
+  <h1>
+    We have the best family favorites,romantic movies and best of the 80s.....
+    
+  </h1>
+<div class="clm">
+  <img src="flash.jpg" alt=""style="width: 100%">
+  <h2>Binge Watching</h2>
+  </div>
+  <div class="clm">
+    <img src="Thor.jpg" alt=""style="width: 100%">
+    <h2>Hottest picks</h2>
+    </div>
+    <div class="clm">
+      <img src="tr.jpg" alt=""style="width: 100%">
+      <h2>family favorites</h2>
+      </div>
+      <div class="clm">
+        <img src="LORD.jpg" alt=""style="width: 100%">
+        <h2>fan favorites</h2>
+        </div>
+        <div class="clm">
+          <img src="bean.jpg" alt=""style="width: 100%">
+          <h2>comedy</h2>
+          </div>
+          <div class="clm">
+            <img src="FOR.jpg" alt=""style="width: 100%">
+            <h2>Games</h2>
+            </div>     
+
+
+
+
+
+
+
+
+</div>
+      
+</body>
+</html>
