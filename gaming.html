@@ -153,16 +153,16 @@ nav .menu li a {
   width: 15%;
   float: right;
 }
-.title{
-  color: black;
 
+.game-title{
+  color: black;
+  font-weight: 600;
 }
 .clm  {
-			width: 15%;
+			width: 20%;
             float: left;
-			padding: 5px;
+			padding: 15px;
 			margin-right: 15px;
-			
 			margin-bottom: 5px;
       
 	  }
@@ -173,7 +173,105 @@ nav .menu li a {
 		}
     .clm a{
       color: black;
+      font-weight: 600;
     }
+
+    
+     /* card */
+     #popup-card {
+      background: linear-gradient(-45deg, #5d524f, #3c393a, #394a50, #000000);
+      display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+ 
+  padding: 20px;
+  border: 1px solid #050505;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#close-btn {
+  display: block;
+  margin-top: 20px;
+  background-color: #606a72;
+}
+    footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-top: 1px solid rgba(0,0,0,0.1);
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px; 
+    
+   
+}
+
+footer p{
+color:#5e5e5e;
+margin: 10px 0px;
+font-size: 0.9rem;
+}
+@media only screen and (max-width: 768px) {
+    nav .menu {
+      display: none;
+    }
+
+    .search {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .logo img {
+      height: 30px;
+    }
+
+    .search {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    #slider {
+      margin-top: 10px;
+      height: 300px;
+    }
+
+    #slider figure img {
+      width: 100%;
+    }
+
+    .game-cover img {
+      height: 250px;
+    }
+
+    .section {
+      margin-top: 10px;
+    }
+
+    .clm {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+
+    .clm img {
+      height: auto;
+      width: 100%;
+    }
+
+  }
+
 
  </style>
  
@@ -194,11 +292,11 @@ nav .menu li a {
     </a>
 <ul class="menu">
   <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
-  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
-  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
-  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
-  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
-  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+  <li><a href="tvshow.html"><i class="fas fa-user"></i>TV Shows</a></li>
+  <li><a href="shop.html"><i class="fas fa-address-card"></i>Shop</a></li>
+  <li><a href="feedbacks.html"><i class="fas fa-project-diagram"></i>Feedbacks</a></li>
+  <li><a href="gaming.html"><i class="fas fa-blog"></i>Gaming</a></li>
+  <li><a href="collctions.html"><i class="fas fa-address-book"></i>Collections</a></li>
  </ul> 
  <div class="search">
     <input type="text" placeholder="find your favourite games and apps"/>
@@ -233,8 +331,9 @@ nav .menu li a {
           <img src="cod1.jpg" alt="Animal Crossing" />
         </div>
         <div class="game-info">
-          <p class="game-title">call of duty</p>
+          <p class="game-title">Call of Duty</p>
          </div>
+       
     </div>
       <div class="game">
         <div class="game-cover">
@@ -250,7 +349,7 @@ nav .menu li a {
           <img src="jtu.jpg" alt="World of Warcraft" />
         </div>
         <div class="game-info">
-          <p class="game-title">STARWARS</p>
+          <p class="game-title">Starwars</p>
         </div>
         
       </div>
@@ -277,15 +376,27 @@ nav .menu li a {
         
       </div>
     </div>
-  </div>
+  
+
 
 <div class="section">
  <h1> APPS </h1>
 
     <div class="clm">
       <img src="dc.jpg" alt=""style="width: 100%">
-      <a href="">DC infinite universe</a>
+      <a href="#" id="popup-link">DC infinite universe</a>
      </div>
+
+     <div id ="popup-card">
+      <div class="card-details">
+          <p class="text-title">Wednesday</p>
+  <p class="text-body">
+   
+    <h5>2022 |  Rating:13+ | Games| App</h5>
+    With DC UNIVERSE INFINITE you get unlimited offline access to comics, graphic novels and your own custom reading lists on iOS, Android and web. DOWNLOAD NOW. ENJOY</p>  
+      </div>
+      <button id="close-btn">Close</button>
+    </div>
      <div class="clm">
       <img src="cn.jpg" alt=""style="width: 100%">
       <a href="">Cartoon Network</a>
@@ -296,5 +407,32 @@ nav .menu li a {
      </div>
     </div>
   
+
+    <script>
+      var popupLink = document.getElementById('popup-link');
+    var popupCard = document.getElementById('popup-card');
+    var closeBtn = document.getElementById('close-btn');
+    var overlay = document.createElement('div');
+    overlay.className = 'overlay';
+    
+    popupLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      document.body.appendChild(overlay);
+      popupCard.style.display = 'block';
+    });
+    
+    closeBtn.addEventListener('click', function() {
+      document.body.removeChild(overlay);
+      popupCard.style.display = 'none';
+    });
+    
+    
+    </script>
+    <div>
+      <footer>
+        <p>Warner Bro (upgrade) @Sandy 2023</p>
+        <p>Copyright 2020 - Warner Bros</p>
+      </footer>
+      </div>
 </body>
 </html>

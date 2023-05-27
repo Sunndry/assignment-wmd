@@ -7,41 +7,43 @@
     <title>Document</title>
     <style>
      
-       
-        body{
-          background-image: linear-gradient(rgba(25, 89, 96, 0.9),rgba(247, 253, 246, 0.86)),url(despicable\ me.jpeg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+     body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    }
+ul {
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+}
 
-    
-  ul{
-        list-style: none;
-    }
-    a{
-        text-decoration: none;
-    }
-  nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border: 1px solid rgba(0,0,0,0.04);
+    border: 1px solid rgba(0, 0, 0, 0.04);
     background-color: #ffffff;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 100;
-  }
-.logo img{
-    height: 40px;
 }
-nav .menu{
+
+.logo img {
+    height: 40px;
+  
+}
+
+nav .menu {
     display: flex;
 }
+
 nav .menu li a {
     height: 40px;
     line-height: 43px;
@@ -53,171 +55,192 @@ nav .menu li a {
     font-weight: 500;
     color: #585858;
     letter-spacing: 1px;
+    padding-right: 30px;
+   
 }
-    .search{
-        width:250px;
-        height: 40px;
-        background-color: rgba(245,245,245,0.8);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-        padding: 0px 20px;
-    }
-    .search input{
-        width:100%;
-        height: 30px;
-        border:none;
-        outline: none;
-        background-color: transparent;
-    }
-    .search i{
-        color:#3a3a3a;
-    }
-    nav .menu li a:hover{
-        background-color: #242424;
-        color:#ffffff;
-        box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
-        transition: all ease 0.2s;
-    }
-  
 
 
 
-
-
-
-
-  h1 {
- 
-  font-size: 32px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  color: #000000;
+nav .menu li a:hover {
+    background-color: #242424;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
+    transition: all ease 0.2s;
 }
-        
-        form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: darkslategrey;
-  border-radius: 10px;
+
+h1 {
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(-45deg, #f5ff31, #e73c7e, #075470, #6629a8);
+    border-radius: 10px;
 }
 
 label {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
-
 
 .amazing-reviews {
-  font-size: 12pt;
+    font-size: 12pt;
+    font-family: Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+    padding: 0;
+    margin: 30px 0 0 0;
+    padding: 15px 15px 10px 15px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, .025) 0 3px 20px;
 }
-.amazing-reviews{
-  font-family: Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
-  padding: 0;
-  margin: 30px 0 0 0;
-  padding: 15px 15px 10px 15px;
-  position: relative;
-  box-shadow: rgba(0,0,0,.025) 0 3px 20px;
-  
-}
-blockquote{
-  font-family: Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
-  padding: 0;
-  height: 90px;
-  background-color: #ffffff;
-  margin: 20px ;
-  border: 1px solid #000000;
-  border-radius: 3px;
+
+blockquote {
+    font-family: Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+    padding: 0;
+    height: 140px;
+    background-color: #ffffff;
+    margin: 20px;
+    border: 1px solid #000000;
+    border-radius: 3px;
 }
 
 .amazing-reviews blockquote:nth-of-type(even):before {
-  left: auto;
-  right: 20px;
+    left: auto;
+    right: 20px;
 }
 
 .amazing-reviews blockquote span em {
-  font-style: normal;
-  font-weight: bold;
-  color: #155096;
-  text-decoration: underline;
+    font-style: normal;
+    font-weight: bold;
+    color: #155096;
+    text-decoration: underline;
 }
+
 .amazing-reviews blockquote span:last-of-type {
-  color: #e47d21;
-  font-size: 10pt;
-  font-weight: bold;
-  display: block;
+    color: #e47d21;
+    font-size: 10pt;
+    font-weight: bold;
+    display: block;
 }
+
 .amazing-reviews blockquote p {
-  font-size: 12pt;
-  font-style: normal;
-  margin: 5px 0 0 0;
-  color: black;
+    font-size: 12pt;
+    font-style: normal;
+    margin: 5px 0 0 0;
+    color: black;
 }
+
 .amazing-reviews h2:last-of-type {
-  background: #eee;
-  text-align: center;
-  font-weight: 400;
-  padding: 15px;
-  margin: 0;
-  border: 1px solid #ccc;
-  position: relative;
+    background: #eee;
+    text-align: center;
+    font-weight: 400;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #ccc;
+    position: relative;
 }
+
 .amazing-reviews h2 q,
 .amazing-reviews h2 strong {
-  font-weight: 600;
+    font-weight: 600;
+}
+button {
+  border: none;
+  height: 30px;
+  width: max-content;
+  border: 1px solid black;
+
+  background-color: #13908e;
+  
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 0;
+ }
+ .review-stars {
+  color: gold; /* Change the color of the stars */
+  font-size: 10px; /* Adjust the size of the stars */
+}
+
+
+ footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-top: 1px solid rgba(0,0,0,0.1);
+margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px; 
+    
+   
+}
+
+footer p{
+color:#000000;
+margin: 10px 0px;
+font-size: 0.9rem;
 }
 @media (min-width: 400px) {
-  .amazing-reviews h2:last-of-type {
-    font-size: 24pt;
-  }
+    .amazing-reviews h2:last-of-type {
+        font-size: 24pt;
+    }
 }
+
 @media (min-width: 700px) {
-  .amazing-reviews blockquote {
-    width: 75%;
-    margin: 30px 15px 0 15px;
-  }
-  .amazing-reviews blockquote:nth-of-type(even) {
-    margin-left: calc(25% - 15px);
-  }
-  .amazing-reviews h2:last-of-type {
-    font-size: 28pt;
-  }
+    .amazing-reviews blockquote {
+        width: 75%;
+        margin: 30px 15px 0 15px;
+    }
+
+    .amazing-reviews blockquote:nth-of-type(even) {
+        margin-left: calc(25% - 15px);
+    }
+
+    .amazing-reviews h2:last-of-type {
+        font-size: 28pt;
+    }
 }
+
 @media (min-width: 700px) {
-  .amazing-reviews .quote-container {
-    width: 100%;
-    padding: 0 75px;
-  }
+    .amazing-reviews .quote-container {
+        width: 100%;
+        padding: 0 75px;
+    }
 }
+ 
+ 
     </style>
 </head>
 <header>
@@ -233,16 +256,13 @@ blockquote{
     </a>
 <ul class="menu">
   <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
-  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
-  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
-  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
-  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
-  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+  <li><a href="tvshow.html"><i class="fas fa-user"></i>TV Shows</a></li>
+  <li><a href="shop.html"><i class="fas fa-address-card"></i>Shop</a></li>
+  <li><a href="feedbacks.html"><i class="fas fa-project-diagram"></i>Feedbacks</a></li>
+  <li><a href="gaming.html"><i class="fas fa-blog"></i>Gaming</a></li>
+  <li><a href="collctions.html"><i class="fas fa-address-book"></i>Collections</a></li>
  </ul> 
- <div class="search">
-    <input type="text" placeholder="find your favourite movies"/>
-    <i class="fas fa-search"></i>
- </div>
+ 
 </nav>
 <div class="main">
  <h1>leave your feedback below</h1>
@@ -257,16 +277,21 @@ blockquote{
     
     <label for="feedback">Feedback:</label>
     <textarea id="feedback" name="feedback" rows="4" required></textarea>
-    
-    <button type="submit">Submit</button>
+    <button onclick="redirectToPage()">Submit</button> 
+  
   </form>
+
+  <script>
+    function redirectToPage() {
+      window.location.href ="home.html"; // Replace with the URL of the destination page
+    }
+  </script>
 </div>
   
    
 
 
   <h1>Customers Reviews</h1>
-<h2>Movies/series/gaming</h2>
 <div class=amazing-reviews>
   <blockquote>
     <header>
@@ -275,7 +300,9 @@ blockquote{
       <span>, June 2</span>
       <span>By <em>Wolfman</em></span>
     </header>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+   
+    <p> 
+      As a comic book lover, I appreciated this flick.  I agree that we are in a superhero rut...but this film was both entertaining and faithful to the comics.  Black Adam has always been a powerful (mainly villainous) force in the DC Universe, and this film depicted this very realistically, in my opinion.  The Rock was a fantastic Black Adam!  Hawkman, Dr. Fate, and the others were all fantastic!  The villain could have been a little more terrifying (like Steppenwolf was in The Justice League), but overall I enjoyed the film and thought it was beautifully crafted and portrayed Black Adam in a terrific and enjoyable way.  Overall, an enjoyable film!</p>
   </blockquote>
   <blockquote>
     <header>
@@ -285,7 +312,12 @@ blockquote{
       <span>By <em>Theo K</em></span>
       <span>Verified Purchase</span>
     </header>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam dolore placeat laudantium, qui, dolor molestias omnis illum, magnam quas distinctio officiis. Recusandae asperiores deserunt repudiandae laboriosam eos explicabo hic! Animi.</p>
+    <div class="review-stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <p>Funny and refreshing and entertaining  how inventive the storytelling is. The film throws you into the action from the first moment (literally: the very first moment) and then it goes back and forth in brilliant and unexpected ways to slowly unspool the story of this insane - but oddly charming - antihero. </p>
   </blockquote>
   <blockquote>
     <header>
@@ -295,7 +327,12 @@ blockquote{
       <span>By <em>Jeff Thomas</em> (Bent River, AB)</span>
       <span>Verified Purchase</span>
     </header>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quos dolor architecto laudantium facilis quis saepe, beatae tempora harum eius, accusamus dolorem nihil nobis, tenetur nisi temporibus odit doloremque omnis.</p>
+    <div class="review-stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <p>The graphics in game play or smooth. To me it is an epic, fast first person shooter that demands quick handed eye coordination. Call of Duty always seems to run on a good game engine so game play Is excellent.</p>
   </blockquote>
   <blockquote>
     <header>
@@ -305,7 +342,12 @@ blockquote{
       <span>By <em>Linda</em></span>
       <span></span>
     </header>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid explicabo neque hic? Vero ea minus deserunt quia quo eligendi consectetur voluptatum tempora error illo illum, voluptates nemo eius, at voluptate!</p>
+    <div class="review-stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <p>i was worried it wouldn’t be able to compete with the other versions of the addams family but WOW! this was amazing! normally i don’t do reviews but i’m just so blown away. from the casting to the acting to the set design to the plot and storyline, wednesday was amazing</p>
   </blockquote>
   <blockquote>
     <header>
@@ -313,29 +355,52 @@ blockquote{
       <strong>Gravity Fall</strong>
       <span>, April 3</span>
       <span>By <em>Michael "Mikko"</em>Gaborone</span>
-      <span>Verified Purchase</span>
+      
     </header>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius facilis doloribus maiores vero at tempora similique ad, iure reiciendis ex id fugiat, quo hic voluptate pariatur totam aliquid impedit voluptatum.</p>
+    <div class="review-stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+    <p>GOOD</p>
   </blockquote>
   <blockquote>
     <header>
       <strong>Arrow</strong>
       <span>, February 16</span>
       <span>By <em>Paul</em> Maun</span>
-      <span>Verified Purchase</span>
+      
+      <div class="review-stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
     </header>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde hic ab ducimus autem! Modi reprehenderit aspernatur assumenda praesentium nisi voluptas, delectus ut. Dolores corrupti aspernatur, illo quis doloribus ipsa alias.</p>
+    <p>Excellent storyline .</p>
   </blockquote>
   <blockquote>
     <header>
-      <strong>insideout:)</strong>
+      <strong>insideout</strong>
       <span>, January 30</span>
       <span>By <em>FastestCowboy</em></span>
-      <span>Verified Purchase</span>
+      
+      <div class="review-stars">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+      </div>
     </header>
+    <p>:) WOW !! I enjoyed this movie with my family </p>
   </blockquote>
 </div>
     
+
+<div>
+  <footer>
+    <p>Warner Bro (upgrade) @Sandy 2023</p>
+    <p>Copyright 2020 - Warner Bros</p>
+  </footer>
+  </div>
 
 
 </body>

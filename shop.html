@@ -96,6 +96,112 @@ nav .menu li a {
     	.clm img{
 			height: 500px;
 		}
+
+
+        footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-top: 1px solid rgba(0,0,0,0.1);
+margin-top: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px; 
+    
+   
+}
+
+footer p{
+color:#000000;
+margin: 10px 0px;
+font-size: 0.9rem;
+}
+  /* Media Queries */
+  @media (max-width: 768px) {
+            .logo img {
+                height: 30px;
+            }
+
+            .nav .menu li a {
+                height: 30px;
+                line-height: 33px;
+                padding: 0px 10px;
+                font-size: 0.7rem;
+            }
+
+            .search {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .search input {
+                width: 80%;
+            }
+
+            .hero {
+                height: 150px;
+            }
+
+            .text {
+                padding-top: 70px;
+            }
+
+            .clm {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .clm img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo img {
+                height: 25px;
+            }
+
+            .nav .menu li a {
+                height: 25px;
+                line-height: 28px;
+                padding: 0px 8px;
+                font-size: 0.6rem;
+            }
+
+            .search {
+                height: 30px;
+                font-size: 0.7rem;
+            }
+
+            .search input {
+                height: 20px;
+            }
+
+            .hero {
+                height: 120px;
+            }
+
+            .text {
+                padding-top: 50px;
+            }
+
+            .clm {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .clm img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
 <header>
@@ -111,15 +217,15 @@ nav .menu li a {
             <img src="logo-removebg-preview.png" class="hello">
         </a>
    <ul class="menu">
-      <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
-      <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
-      <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
-      <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
-      <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
-      <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+    <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
+    <li><a href="tvshow.html"><i class="fas fa-user"></i>TV Shows</a></li>
+    <li><a href="shop.html"><i class="fas fa-address-card"></i>Shop</a></li>
+    <li><a href="feedbacks.html"><i class="fas fa-project-diagram"></i>Feedbacks</a></li>
+    <li><a href="gaming.html"><i class="fas fa-blog"></i>Gaming</a></li>
+    <li><a href="collctions.html"><i class="fas fa-address-book"></i>Collections</a></li>
      </ul> 
      <div class="search">
-        <input type="text" placeholder="find your favourite movies"/>
+        <input type="text" placeholder="search our store"/>
         <i class="fas fa-search"></i>
      </div>
     </nav>
@@ -142,6 +248,11 @@ nav .menu li a {
             <img src="looney.jpg" alt=""style="width: 100%">
             <h2>Looney Tunes shop</h2>
             </div>
-    
+            <div>
+                <footer>
+                  <p>Warner Bro (upgrade) @Sandy 2023</p>
+                  <p>Copyright 2020 - Warner Bros</p>
+                </footer>
+                </div>
 </body>
 </html>

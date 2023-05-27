@@ -7,9 +7,7 @@
     <title>Document</title>
 
      <style>
-     body{
-      background-color: white;
-     }
+     
 ul{
         list-style: none;
     }
@@ -152,8 +150,8 @@ a{
       float: left;
 			padding: 5px;
 			margin-right: 15px;
-		
-			margin-bottom: 5px;
+		 margin-top: 10px;
+			margin-bottom: 15px;
 	  }
 	  
 	  
@@ -161,6 +159,119 @@ a{
 			height: 300px;
       
 		}
+
+     /* card */
+    #popup-card {
+      background: linear-gradient(-45deg, #5d524f, #3c393a, #394a50, #000000);
+      display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  border: 1px solid #050505;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#close-btn {
+  display: block;
+  margin-top: 20px;
+  background-color: #606a72;
+}
+
+
+
+    footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-top: 1px solid rgba(0,0,0,0.1);
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 30px; 
+    
+   
+}
+
+footer p{
+color:#5e5e5e;
+margin: 10px 0px;
+font-size: 0.9rem;
+}
+        /* Media Queries */
+
+        /* Mobile Devices */
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo img {
+                height: 30px;
+            }
+
+            nav .menu {
+                margin-top: 10px;
+                flex-direction: column;
+            }
+
+            nav .menu li a {
+                height: 30px;
+                line-height: 33px;
+                padding: 0px 15px;
+                font-size: 0.6rem;
+            }
+
+            .search {
+                width: 200px;
+                height: 30px;
+                font-size: 0.7rem;
+            }
+
+            .search input {
+                height: 20px;
+            }
+
+            #slider {
+                height: 300px;
+            }
+
+            .main {
+                font-size: 20px;
+            }
+
+            .clm {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+                margin-bottom: 10px;
+                padding: 15px;
+            }
+
+            .clm img {
+                height: auto;
+                width: 100%;
+            }
+
+            .images {
+                width: 100%;
+                float: none;
+                margin-right: 0;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+
+            .images img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
 
 
 
@@ -180,14 +291,14 @@ a{
     </a>
 <ul class="menu">
   <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
-  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
-  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
-  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
-  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
-  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+      <li><a href="tvshow.html"><i class="fas fa-user"></i>TV Shows</a></li>
+      <li><a href="shop.html"><i class="fas fa-address-card"></i>Shop</a></li>
+      <li><a href="feedbacks.html"><i class="fas fa-project-diagram"></i>Feedbacks</a></li>
+      <li><a href="gaming.html"><i class="fas fa-blog"></i>Gaming</a></li>
+      <li><a href="collctions.html"><i class="fas fa-address-book"></i>Collections</a></li>
  </ul> 
  <div class="search">
-    <input type="text" placeholder="find your favourite movies"/>
+    <input type="text" placeholder="find your fav show"/>
     <i class="fas fa-search"></i>
  </div>
 </nav>
@@ -208,25 +319,56 @@ a{
 
          <div class="clm">
           <img src="wednesday.jpg" alt="" style="width: 100%">
-          <a href="Wednesday Addams _ Official Teaser _ Netflix(1080P_HD).mp4">Wednesday</a>
-           <p>Year: 2018</p>
+           <a href="#" id="popup-link">Wednesday</a>
+          <p>Year: 2022</p>
            <p>Director: larry julio</p>
-           <p>Cast: shane will, Tom Brown, </p>
+           <p>Cast:Jenna Ortega </p>
           </div>
+          
+          <div id ="popup-card">
+            <div class="card-details">
+                <p class="text-title">Wednesday</p>
+        <p class="text-body">
+         
+          <h5>2022 | Maturity Rating:13+ | 1 Season | Fantasy</h5>
+          Smart, sarcastic and a little dead inside, Wednesday Addams investigates a murder spree while making new friends — and foes — at Nevermore Academy.
+          Starring:Jenna Ortega, Gwendoline Christie, Riki Lindhome
+          Creators:Alfred Gough, Miles Millar <a href="WEDNESDAY Teaser (2022) Jenna Ortega(360P).mp4">Click here </a></p> 
+            </div>
+            <button id="close-btn">Close</button>
+          </div>
+      
+      
+
+
           <div class="clm">
            <img src="money_heist.jpg" alt=""style="width: 100%">
            <a href="">Money Heist</a>
-           <p>Year: 2018</p>
+           <p>Year: 2020</p>
            <p>Director: larry julio</p>
-           <p>Cast: shane will, Tom Brown, </p>
+           <p>Cast: Sophie, Tom Brown, </p>
           </div>
         
           <div class="clm">
+            <img src="reinfield.jpg" alt="" style="width: 100%">
+            <a href="">Reinfield</a>
+            <p>Year: 2023</p>
+            <p>Director: larry julio</p>
+             <p>Cast:William, Tom Brown, </p>
+           </div>
+           <div class="clm">
+            <img src="boss baby.jpg" alt="" style="width: 100%">
+            <a href="">Boss:family business</a>
+            <p>Year: 2021</p>
+            <p>Director: larry julio</p>
+             <p>Cast: shane will, Tom Brown, </p>
+           </div>
+          <div class="clm">
            <img src="flash.jpg" alt="" style="width: 100%">
            <a href="">The Flash</a>
-           <p>Year: 2018</p>
+           <p>Year: 2020</p>
            <p>Director: larry julio</p>
-            <p>Cast: shane will, Tom Brown, </p>
+            <p>Cast: Shane will, Martin Brown, </p>
           </div>
          
        
@@ -248,8 +390,47 @@ a{
                 <img src="UA.jpg" alt="">
                 <a href="">The Umbrella Academy</a>
                </div>
+               <div class="images">
+                <img src="kfp.jpg" alt="">
+                <a href="">Kung-fu Panda</a>
+               </div>
+               <div class="images">
+                <img src="DC1.jpg" alt=""style="width">
+                <a href="">Justice League </a>
+               </div>
               
            </div>
-          
+
+
+
+
+
+<script>
+  var popupLink = document.getElementById('popup-link');
+var popupCard = document.getElementById('popup-card');
+var closeBtn = document.getElementById('close-btn');
+var overlay = document.createElement('div');
+overlay.className = 'overlay';
+
+popupLink.addEventListener('click', function(event) {
+  event.preventDefault();
+  document.body.appendChild(overlay);
+  popupCard.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', function() {
+  document.body.removeChild(overlay);
+  popupCard.style.display = 'none';
+});
+
+
+</script>
+           <div>
+
+            <footer>
+              <p>Warner Bro (upgrade) @Sandy 2023</p>
+              <p>Copyright 2020 - Warner Bros</p>
+            </footer>
+            </div>
 </body>
 </html>

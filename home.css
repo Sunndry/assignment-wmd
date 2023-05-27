@@ -1,3 +1,5 @@
+
+
 ul{
     list-style: none;
 }
@@ -78,6 +80,7 @@ nav .menu li a:hover{
     height: 100%;
     object-fit: cover;
     object-position: top;
+   
 }
  .showcase-heading{
     padding-left:30px ;
@@ -94,33 +97,7 @@ font-weight: bold;
 color: #333333;
 margin: 10px 0;
 }
-.raw {
-width: 100%;
-margin: auto;
-margin-bottom: 40px;
-}
-.raw .post {
-width: 14%;
 
-float: right;
-margin-right: 2.5%;
-}
-.raw .post img {
-width: 100%;
-min-height: 260px;
-max-width: 100%;
-border-radius: 0.3em;
-}
-.raw .post .title {
-font-size: 1.25em;
-margin: 1em 0 0 0;
-color: #333333;
-}
-.raw .post .post_info {
-font-size: 0.75em;
-color: #777;
-margin: 0.5em 0;
-}
 .movies-heading h2{
 font-weight: 400;
 margin: 0px;
@@ -149,6 +126,7 @@ margin: 20px;
 border-radius: 5px;
 overflow: hidden;
 border-top: 3px solid #292929;
+
 }
 .movies-img{
 width:100%;
@@ -195,3 +173,100 @@ color:#5e5e5e;
 margin: 10px 0px;
 font-size: 0.9rem;
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+  
+    .logo img {
+      height: 30px;
+    }
+  
+    nav .menu li a {
+      height: 30px;
+      line-height: 33px;
+      padding: 0px 10px;
+      font-size: 0.7rem;
+    }
+  
+    .search {
+      width: 200px;
+      height: 30px;
+      border-radius: 15px;
+    }
+  
+    .search input {
+      height: 20px;
+    }
+  
+    .showcase-box {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .showcase-heading {
+      font-size: 1rem;
+    }
+  
+    .movies-box {
+      width: 250px;
+    }
+  
+    .movies-img {
+      height: 300px;
+    }
+  
+    .movies-box a {
+      margin: 10px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Adjustments for even smaller screens */
+  
+    .logo img {
+      height: 25px;
+    }
+  
+    nav .menu li a {
+      height: 25px;
+      line-height: 28px;
+      padding: 0px 8px;
+      font-size: 0.6rem;
+    }
+    
+  
+    .search {
+      width: 150px;
+      height: 25px;
+      border-radius: 12.5px;
+    }
+  
+    .search input {
+      height: 15px;
+    }
+  
+    .showcase-box {
+      width: 100%;
+      height: 150px;
+    }
+  
+    .showcase-heading {
+      font-size: 0.9rem;
+    }
+  
+    .movies-box {
+      width: 200px;
+    }
+  
+    .movies-img {
+      height: 200px;
+    }
+  
+    .movies-box a {
+      margin: 5px;
+      font-size: 0.7rem;
+    }
+  }

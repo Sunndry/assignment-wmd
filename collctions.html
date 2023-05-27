@@ -100,23 +100,42 @@ margin-left: 60px;
   background: #ffffff;
   height: 500px;
   margin-top: 30px;
+  padding-left: 20px;
 }
   
  .clm  {
-			width: 15%;
+			width: 20%;
             float: left;
 			padding: 5px;
 			margin-right: 15px;
 		  margin-top: 10px;
-			margin-bottom: 5px;
+			margin-bottom: 15px;
+      
 	  }
 	  
 	  
     	.clm img{
 			height: 300px;
 		}
+    footer{
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-top: 1px solid rgba(0,0,0,0.1);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+   
+}
 
-@media(min-aspect-ratio: 16/9){
+footer p{
+color:#5e5e5e;
+margin: 10px 0px;
+font-size: 0.9rem;
+}
+
+    @media(min-aspect-ratio: 16/9){
   .back-video{
      width: 80%;
      height: auto;
@@ -129,6 +148,31 @@ margin-left: 60px;
   }
 }
 
+@media (max-width: 768px) {
+    .text-box {
+        margin-left: 20px;
+        margin-top: 150px;
+        font-size: 40px;
+    }
+
+    .back-video {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-box {
+        margin-left: 20px;
+        margin-top: 120px;
+        font-size: 30px;
+    }
+
+    .back-video {
+        width: 90%;
+        margin-left: 20px;
+    }
+}
 
     </style>
 </head>
@@ -151,11 +195,11 @@ margin-left: 60px;
     </a>
 <ul class="menu">
   <li><a href="movies.html"><i class="fas fa-home"></i>Movies</a></li>
-  <li><a href="feedbacks.html"><i class="fas fa-user"></i>feedback</a></li>
-  <li><a href="shop.html"><i class="fas fa-address-card"></i>shop</a></li>
-  <li><a href="gaming.html"><i class="fas fa-project-diagram"></i>gaming</a></li>
-  <li><a href="collctions.html"><i class="fas fa-blog"></i>Collections</a></li>
-  <li><a href="tvshow.html"><i class="fas fa-address-book"></i>series</a></li>
+      <li><a href="tvshow.html"><i class="fas fa-user"></i>TV Shows</a></li>
+      <li><a href="shop.html"><i class="fas fa-address-card"></i>Shop</a></li>
+      <li><a href="feedbacks.html"><i class="fas fa-project-diagram"></i>Feedbacks</a></li>
+      <li><a href="gaming.html"><i class="fas fa-blog"></i>Gaming</a></li>
+      <li><a href="collctions.html"><i class="fas fa-address-book"></i>Collections</a></li>
  </ul> 
  <div class="search">
     <input type="text" placeholder="find your favourite movies"/>
@@ -201,6 +245,11 @@ margin-left: 60px;
 
 
 </div>
-      
+<div>
+<footer>
+  <p>Warner Bro (upgrade) @Sandy 2023</p>
+  <p>Copyright 2020 - Warner Bros</p>
+</footer>
+</div>
 </body>
 </html>
